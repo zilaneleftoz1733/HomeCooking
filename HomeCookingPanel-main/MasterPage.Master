@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="HomeCookingWebPanel.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="We are at your service with our homemade food menus.">
+    <meta name="keywords" content="cooks,home made, order" />
+    <title>Home Cooking Web Panel</title>
+    <link href="css/root.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <form runat="server">
+        <div class="loading">
+            <img src="img/loading.gif" alt="loading-img" />
+        </div>
+        <div style="background-color:#cf2627" id="top" class="clearfix">
+            <div class="applogo">
+                <a href="OrderPage.aspx" class="logo">
+                    <img id="imgLogo" src="img/homecooking-yatay-logo.png" style="height: 60px;" /></a>
+            </div>
+
+            <a style="color:white" href="#" class="sidebar-open-button"><i class="fa fa-bars"></i></a>
+            <a href="#" class="sidebar-open-button-mobile"><i class="fa fa-bars"></i></a>
+
+            <ul class="top-right">
+                <li" class="dropdown link">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle profilebox">
+                        <b>Welcome:
+                            <asp:Label ID="UserInfo" runat="server" Text=""></asp:Label>
+                        </b><span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu-list dropdown-menu-right">
+                        <li><a href="login.aspx"><i class="fa falist fa-power-off"></i>Exit</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+       
+        <div class="sidebar clearfix">
+            <ul class="sidebar-panel nav">
+                <li class="sidetitle">ACTION MENU</li>
+                <li><a href="OrderPage.aspx"><span style="color:#b65656" class="icon color5"><i class="fa fa-shopping-cart"></i></span>Order Page</a></li>
+                <li><a href="MenuManagement.aspx"><span style="color:#b65656" class="icon color5"><i class="fa fa-cutlery"></i></span>Menu Page</a></li>
+            </ul>
+            <ul class="sidebar-panel nav">
+                <li class="sidetitle">SETTINGS</li>
+                <li><a href="UserManagement.aspx"><span style="color:#b65656" class="icon color5"><i class="fa fa-user"></i></span>User Management</a></li>
+            </ul>
+        </div>
+    
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </form>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/datatables/datatables.min.js"></script>
+</body>
+</html>
