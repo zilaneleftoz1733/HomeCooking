@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "234327680916",
+    "project_id": "project-management-22705",
+    "storage_bucket": "project-management-22705.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234327680916:android:95e4e13548f2d7b6a29181",
+        "android_client_info": {
+          "package_name": "com.alicelikbag.projectmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234327680916-t914ev8ngjq5fbcknok8n4pkl5a3nchm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alicelikbag.projectmanagement",
+            "certificate_hash": "7dd0aafeef080ce5f737d9015e5229a860fba32e"
+          }
+        },
+        {
+          "client_id": "234327680916-eh97khmpnr7a8octrgkrjqoeu11gr4ie.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiYKMxngFtteT4QIkNA_OIUSxyZikWwQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234327680916-eh97khmpnr7a8octrgkrjqoeu11gr4ie.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "234327680916-9gd5cq9pfgfrldf4oftc5ncddhgl4i4v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.alicelikbag.projectmanagement"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
